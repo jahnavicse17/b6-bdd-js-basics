@@ -1,0 +1,21 @@
+
+    {
+        "name": "Janu",
+        "age": 20,
+        "email": "Janu@google.com",
+        "address":
+        {
+            "address1": "Asylum",
+            "address2": "Broadway",
+            "address3": 
+            {
+                "address4": "hooland"
+            },
+            "city": "Hartford",
+            "zipcode": 123456
+        },
+        "isStudent": true,
+        "interests": ["sports", "reading", "travel", "cooking"],
+        "employees": [{"firstName":"Janu", "lastName":"Som", "age":10}, {"firstName":"Jyo", "lastName":"Somp", "age":15}],
+        "favNumbers": [6,8,3,9]
+    }

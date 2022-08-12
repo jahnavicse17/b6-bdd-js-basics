@@ -1,0 +1,62 @@
+{
+    "CriTeam1": [
+        {
+            "firstName": "Sachin",
+            "lastName": "Tendulkar",
+            "age": 32,
+            "height": 5.1,
+            "weight": 55
+        },
+        {
+            "firstName": "Sourav",
+            "lastName": "Ganguly",
+            "age": 35,
+            "height": 5.9,
+            "weight": 60
+        },
+        {
+            "firstName": "Sehwag",
+            "lastName": "Veerendra",
+            "age": 32,
+            "height": 5.3,
+            "weight": 55
+        },
+        {
+            "firstName": "Rahul",
+            "lastName": "Dravid",
+            "age": 34,
+            "height": 5.7,
+            "weight": 57
+        }
+    ],
+    "CriTeam2": [
+        {
+            "firstName": "Ajay",
+            "lastName": "Jadeja",
+            "age": 33,
+            "height": 5.9,
+            "weight": 65
+        },
+        {
+            "firstName": "Anil",
+            "lastName": "Kumble",
+            "age": 38,
+            "height": 6.1,
+            "weight": 70
+        },
+        {
+            "firstName": "Rohit",
+            "lastName": "Sharma",
+            "age": 32,
+            "height": 5.8,
+            "weight": 65
+        },
+        {
+            "firstName": "Virat",
+            "lastName": "Kohli",
+            "age": 32,
+            "height": 5.7,
+            "weight": 60
+        }
+    ]
+}
