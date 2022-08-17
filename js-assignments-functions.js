@@ -3,33 +3,46 @@
 //Pgm1: Finding the Number of Characters in a string and return the length of it.
 let str = ' ';
 let count = 0;
-function char_count(str) {
-    console.log("Total String Length:" + str.length);
+function char_count() {
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var str = prompt("Enter your String: "); 
     for (let i = 0; i < str.length; i++) {
         if (str.charAt(i)) {
-            console.log("Character is: " + str.charAt(i));
+            console.log(`Character at ${i}: `+ str.charAt(i));
             count++;
         }
     }
     return count;
 }
-char_count(' w3 resource.com ');
-console.log("Total String characters length: " + count);
+char_count();
+console.log("Total length of a String is: " + count);
 
 //Pgm2: Function that accepts 2 numbers and return the largest No.
 let numberOne, numberTwo, largest;
-function largeNo(numberOne, numberTwo) {
+function largeNo() 
+{
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var a = prompt("Enter your First Number: "); 
+    var numberOne=parseInt(a);    
+    var b = prompt("Enter your Second Number: "); 
+    var numberTwo=parseInt(b);    
     if (numberOne > numberTwo)
         largest = numberOne;
     else
         largest = numberTwo;
     return largest;
 }
-console.log("Largest Number is: " + largeNo(10000, 2000));
+console.log("Largest Number is: " + largeNo());
 
 //Pgm 3: Function to write that writtens boolean flag when it is in between 5000 and 9999.
 let value, boolean;
-function booleanflag(value) {
+function booleanflag() {
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var a = prompt("Enter your Value: ");
+    var value=parseInt(a);
     if ((value >= 5000 && value <= 9999)) {
         boolean = true;
     }
@@ -38,45 +51,62 @@ function booleanflag(value) {
     }
     return boolean;
 }
-console.log("Boolean value for entered value : " + booleanflag(8000));
+console.log("Boolean value for entered value : " + booleanflag());
 
 //Pgm 4: Accepts the number and returns a cube root of the number.
-
 let cuberoot;
-function cuberootnumber(cuberoot) {
+function cuberootnumber() 
+{
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var a = prompt("Enter your Number to find Cuberoot: ");
+    var cuberoot=parseInt(a);
     return +Math.cbrt(cuberoot);
 }
-console.log("Cube root of a number is: " + cuberootnumber(125));
-console.log("Cube root of a number is: " + cuberootnumber(10));
+console.log("Cube root of a number is: " + cuberootnumber());
 
 //Pgm 5: Write a function that takes inches a parameter and returns to feet.
 let inches, feet;
-function inchToFeet(inches) {
+function inchToFeet() {
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var a = prompt("Enter your Inches: ");
+    var inches=parseInt(a);
     return (feet = inches / 12);
 }
-console.log("Inches to Feet is: " + inchToFeet(60) + " Feet");
+console.log("Inches to Feet is: " + inchToFeet() + " Feet");
 
 //Pgm 6: Write a function that takes degrees a parameter and returns to Fahrenheit.
 let degrees, fahrenheit;
-function degreeToFahrenheit(degrees) {
+function degreeToFahrenheit() {
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var a = prompt("Enter your Degrees: ");
+    var degrees=parseInt(a);
     return (fahrenheit = ((degrees * 1.8) + 32));
 }
-console.log("Degrees to Fahrenheit is: " + degreeToFahrenheit(1) + " F");
+console.log("Degrees to Fahrenheit is: " + degreeToFahrenheit() + " F");
 
 //Pgm 7: Write a function that takes kilos a parameter and returns to pounds and vice-versa.
+//Kilos to Pounds
 let kilos, pounds;
-function kilosToPounds(kilos) {
+function kilosToPounds() {
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var a = prompt("Enter your Kilos: ");
+    var kilos=parseInt(a);
     return pounds = (kilos * 2.20462262185);
 }
-console.log("Kilos to Pounds is: " + kilosToPounds(52) + " lbs");
-function poundsToKilos(pounds) {
+console.log("Kilos to Pounds is: " + kilosToPounds() + " lbs");
+//Pounds to Kilos
+function poundsToKilos() {
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var a = prompt("Enter your Pounds: ");
+    var pounds=parseInt(a);
     return kilos = (pounds * 0.45359237);
 }
-console.log("Pounds to Kilos is: " + poundsToKilos(72) + " kg");
-function poundsToKilos(pounds) {
-    return kilos = (pounds * 0.453592);
-}
-console.log("Pounds to Kilos is: " + poundsToKilos(2.2) + " kg");
+console.log("Pounds to Kilos is: " + poundsToKilos() + " kg");
 
 //Pgm 8: List of 10 states in USA by using JSON file.
 var statesInUSAObj = require("./statesinusa.json");
@@ -105,8 +135,13 @@ for (let k = 0; k < criteam.CriTeam2.length; k++) {
 }
 
 //Pgm 10: Returns longest string when 2 strings are passed.
-const animalNames = ["cat", "chicken", "horse", "elephant"];
-function getLongestString(animalNames) {
+//const animalNames = ["cat", "elephant"];
+function getLongestString() {
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var str1 = prompt("Enter String1: ");
+    var str2 = prompt("Enter String2: ");
+    const animalNames = [str1,str2];
     let size = animalNames.length;
     let longestName = animalNames[0];
     for (let i = 0; i < size; i++) {
@@ -117,20 +152,25 @@ function getLongestString(animalNames) {
 
     return longestName;
 }
-console.log("Longest String is: " +getLongestString(animalNames));
+console.log("Longest String is: " +getLongestString());
 
-//Pgm 10: Returns shortest string when 2 strings are passed.
-const animalNames1 = ["cat", "chicken", "horse", "elephant"];
-function getShortestString(animalNames1) {
-    let size = animalNames1.length;
-    let shortestName = animalNames1[0];
+//Pgm 11: Returns shortest string when 2 strings are passed.
+//const animalNames1 = ["cat", "elephant"];
+function getShortestString() {
+    const ps=require("prompt-sync");
+    const prompt=ps();
+    var str1 = prompt("Enter String1: ");
+    var str2 = prompt("Enter String2: ");
+    const animalNames = [str1,str2];
+    let size = animalNames.length;
+    let shortestName = animalNames[0];
     for (let i = 0; i < size; i++) {
-        if (animalNames1[i].length < shortestName.length) {
-            shortestName = animalNames1[i];
+        if (animalNames[i].length < shortestName.length) {
+            shortestName = animalNames[i];
         }
     }
 
     return shortestName;
 }
-console.log("Shortest String is: " +getShortestString(animalNames1));
+console.log("Shortest String is: " +getShortestString());
 
