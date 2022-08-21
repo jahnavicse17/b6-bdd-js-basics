@@ -68,7 +68,7 @@ console.log("Cube root of a number is: " + cuberootnumber());
 //Pgm 5: Write a function that takes inches a parameter and returns to feet.
 let inches, feet;
 function inchToFeet() {
-    const ps=require("prompt-sync");
+    const ps=require("prompt-sync"); 
     const prompt=ps();
     var a = prompt("Enter your Inches: ");
     var inches=parseInt(a);

@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "learning node/npm",
+  "main": "index.js",
+  "dependencies": {
+    "browserlist": "^1.0.1",
+    "cucumber": "^6.0.7",
+    "express": "^4.18.1",
+    "http": "0.0.1-security",
+    "lodash": "4.17.21",
+    "package-name": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "sample",
+    "node",
+    "app"
+  ],
+  "author": "Jahnavi",
+  "license": "ISC"
+}
