@@ -337,7 +337,7 @@ else {
 }
 //take input from the user
 const number = prompt("Enter a number: ");
-evenorodd(number); */
+evenorodd(number); 
 
 //Pgm 17: Find the duplicates in a string array
 function duplicatesInString() {
@@ -357,7 +357,39 @@ function duplicatesInString() {
     };
     console.log("Duplicates in a String are: "+findDuplicateWords(strArr));
     } 
-    duplicatesInString(); 
+    duplicatesInString();  
 
+//Pgm 18: How to revere a sentence with string words using string array(Ex: I am Jahnavi, O/P: ivanhaJ ma I)
+function reverseString(str) {
+    // empty string
+    const str1 = str.split("").reverse().join("");
+    return str1;
+}
+// take input from the user
+const string = prompt('Enter a string: ');
+const result = reverseString(string);
+console.log(result);
+
+// Pgm 19: How to reverse a sentence using a string array(ex: I am Jahnavi, o/p: Jahnavi Iam I)
+function reverseStringArray(str) {
+    // return a new array of strings
+    const str1 = str.split(" ").reverse().join(" ");
+    return str1; }
+// take input from the user
+const str = prompt('Enter a string: ');
+const res = reverseStringArray(str);
+console.log(res);
+//console.log("Reverse String Array: "+reverseStringArray(str)); */
+
+// Pgm 20: How to reverse a words in a sentence using a string array(ex: I am Jahnavi, o/p: I ma ivanhaJ)
+function reverseStringArray(str) {
+    // return a new array of strings
+    const str1 = str.split(/(\s+)/).map(word => /^\s+$/.test(word) ? word : word.split('').reverse().join("")).join('');
+    return str1; }
+// take input from the user
+const str = prompt('Enter a string: ');
+const res = reverseStringArray(str);
+console.log(res);
+//console.log("Reverse String Array: "+reverseStringArray(str));
 
 
