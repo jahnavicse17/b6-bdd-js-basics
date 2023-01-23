@@ -13,7 +13,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node test-script.js",
+  "start_windows": "set NODE_ENV=production&&node test-script.js"
   },
   "keywords": [
     "sample",

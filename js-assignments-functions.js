@@ -8,17 +8,17 @@ function char_count() {
     const ps = require("prompt-sync");
     const prompt = ps();
     var str = prompt("Enter your String: ");
-    console.log("Length of the String: " + str.length);
-    for (let i = 0; i < str.length; i++) {
+    console.log("Length of the String: " +str.length);
+    for (let i = 0; i <str.length; i++) {
         if (str.charAt(i)) {
-            console.log(`Character at ${i}: ` + str.charAt(i));
+            console.log(`Character at ${i}: ` +str.charAt(i));
             count++;
         }
     }
     return count;
 }
 char_count();
-console.log("Number of characters in the string are: " + count);
+console.log("Number of characters in the string are: " +count);
 
 //Pgm2: Function that accepts 2 numbers and return the largest No.
 let numberOne, numberTwo, largest;
@@ -35,10 +35,10 @@ function largeNo()
     else
         largest = numberTwo;
     return largest;
-}
-console.log("Largest Number is: " + largeNo());
+} 
+console.log("Largest Number is: " +largeNo()); 
 
-//Pgm 3: Function to write that writtens boolean flag when it is in between 5000 and 9999.
+//Pgm 3: Function to write that returns boolean flag when it is in between 5000 and 9999.
 let value, boolean;
 function booleanflag() {
     const ps=require("prompt-sync");
@@ -53,7 +53,7 @@ function booleanflag() {
     }
     return boolean;
 }
-console.log("Boolean value for entered value : " + booleanflag());
+console.log("Boolean value for entered value : " +booleanflag());
 
 //Pgm 4: Returns longest string when 2 strings are passed.
 //const animalNames = ["cat", "elephant"];
@@ -118,7 +118,7 @@ function getLargestNumber() {
 }
 console.log("Largest Number is: " + getLargestNumber());
 
-//Pgm 7: Find the duplicates in a string array
+//Pgm 7: Check the duplicates exist in a string array or not
 function duplicatesInString() {
     var arr = ["a", "a", "b", "c"];
     var arr1 = ["a", "b", "c"];
@@ -137,11 +137,11 @@ const findDuplicateWords = str => {
    const strArr = str.split(" ");
    const res = [];
    for(let i = 0; i < strArr.length; i++){
-      if(strArr.indexOf(strArr[i]) !== strArr.lastIndexOf(strArr[i])){
+      if(strArr.indexOf(strArr[i]) !== strArr.lastIndexOf(strArr[i])){ //0, 10, 5, 10, [big, black, big, black]
         console.log("IndexOf: "+strArr.indexOf(strArr[i]));
         console.log("LastIndexOf: "+strArr.lastIndexOf(strArr[i]));
-         if(!res.includes(strArr[i])){
-            res.push(strArr[i]);
+         if(!res.includes(strArr[i])){ //if res array not includes string, then push //[big, black, big, black]
+            res.push(strArr[i]); //big, black.
          };
       };
    };
@@ -152,12 +152,12 @@ console.log(findDuplicateWords(str));
 duplicatesInString(); 
 
 // Pgm 9: program to check if the string is palindrome or not
-function checkPalindrome(string) {
-    const len = string.length;
+function checkPalindrome(string) { //const s="madam";
+    const len = string.length; //5
     // loop through half of the string
-    for (let i = 0; i < len / 2; i++) {
+    for (let i = 0; i < len/2; i++) { //0, 1, 2
         // check if first and last char are same
-        if (string[i] !== string[len - 1 - i]) {// m!==m, a!==a, d!==d, a!==a, m!==m
+        if (string[i] !== string[len - 1 - i]) {// 0==4, [m===m, a===a, d===d, a===a, m===m]
             return 'It is not a palindrome';
         }
     }
@@ -172,7 +172,7 @@ const value = checkPalindrome(string);
 console.log(value); 
 
 // Pgm 10: program to check if the number is palindrome or not
-function checkPalindrome(num) {
+function checkPalindrome(num) { //num=121
     var rem, temp, final = 0;
     var number = num;
     temp = number;
