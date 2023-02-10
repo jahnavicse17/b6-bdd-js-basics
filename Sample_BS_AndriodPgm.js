@@ -19,12 +19,12 @@ desiredCaps = {
   // Set other BrowserStack capabilities
   'project': 'First NodeJS-Andriod project',
   'build': 'browserstack-android-build-1',
-  'name': 'first_andriod_test',
+  'name': 'first_andriod_test1',
 };
 // Initialize the remote Webdriver using BrowserStack remote URL
 // and desired capabilities defined above
-driver = wd.promiseRemote("https://jahnavi_uWxiU8:tqQpd3xhgjVsfCxo6CEx@hub-cloud.browserstack.com/wd/hub");
-//driver = wd.promiseRemote("http://hub-cloud.browserstack.com/wd/hub");
+//driver = wd.promiseRemote("https://jahnavi_uWxiU8:tqQpd3xhgjVsfCxo6CEx@hub-cloud.browserstack.com/wd/hub");
+driver = wd.promiseRemote("http://hub-cloud.browserstack.com/wd/hub");
 // Test case for the BrowserStack sample Android app. 
 // If you have uploaded your app, update the test case here. 
 
